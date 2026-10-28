@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# Copyright Chems eddine h1t8re 6.2.1996 After Jesus Christ'
 import subprocess
 
 def runcommand(command=[], input_data=b'', timeout="5"):
@@ -58,7 +61,6 @@ def clean_code():
 				with open(path_file, 'w') as file:
 					for information_to_clean in std_out.decode('utf-8'):
 						file.write(information_to_clean)
-				runcommand(["rm", "-v", path_file_backup])
 
 def main():
 	clean_code()
